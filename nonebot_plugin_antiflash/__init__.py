@@ -14,7 +14,6 @@ async def _checker(bot: Bot, event: GroupMessageEvent) -> bool:
 flashimg = on_message(priority=1,rule=Rule(_checker))
 @flashimg.handle()
 async def _(bot: Bot, event: GroupMessageEvent):
-    # await asyncio.sleep(0.1)
     gid = str(event.group_id)
     if gid in anti_flash_group:
         msg = str(event.get_message())
