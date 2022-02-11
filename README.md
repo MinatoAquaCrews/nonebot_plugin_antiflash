@@ -10,7 +10,7 @@ _🎇 反闪照 🎇_
 </div>
 <p align="center">
   
-  <a href="https://github.com/KafCoppelia/nonebot_plugin_antiflash/blob/main/LICENSEE">
+  <a href="https://github.com/KafCoppelia/nonebot_plugin_antiflash/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-informational">
   </a>
   
@@ -31,6 +31,8 @@ _🎇 反闪照 🎇_
 v0.2.0
 
 ⚠ 适配nonebot2-2.0.0beta.1；适配alpha.16版本参见[alpha.16分支](https://github.com/KafCoppelia/nonebot_plugin_antiflash/tree/alpha.16)
+
+[更新日志](https://github.com/KafCoppelia/nonebot_plugin_antiflash/releases/tag/v0.2.0)
 
 ## 安装
 
