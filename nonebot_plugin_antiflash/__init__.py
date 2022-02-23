@@ -3,9 +3,22 @@ from nonebot.rule import Rule
 from nonebot import on_message
 import re
 import nonebot
+from pydantic import ConfigError
 
-ANTI_FLASH_ON = False if not nonebot.get_driver().config.anti_flash_on else True
-anti_flash_group = nonebot.get_driver().config.anti_flash_group
+global_config = nonebot.get_driver().config
+if not hasattr(global_config, "anti_flash_on"):
+    ANTI_FLASH_ON = False
+else:
+    ANTI_FLASH_ON = nonebot.get_driver().config.anti_flash_on
+
+if not hasattr(global_config, "anti_flash_group"):
+    anti_flash_group = []
+    if ANTI_FLASH_ON:
+        raise ConfigError("Anti-flash group should not be empty when anti-flash is enabled!")
+else:
+    anti_flash_group = nonebot.get_driver().config.anti_flash_group
+
+__anti_flash_vsrsion__ = "v0.2.1"
 
 async def _checker(bot: Bot, event: GroupMessageEvent) -> bool:
     msg = str(event.get_message())
