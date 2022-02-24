@@ -19,7 +19,7 @@ _🎇 反闪照 🎇_
   </a>
   
   <a href="">
-    <img src="https://img.shields.io/badge/release-v0.1.2-orange">
+    <img src="https://img.shields.io/badge/release-v0.1.3-orange">
   </a>
   
 </p>
@@ -28,17 +28,17 @@ _🎇 反闪照 🎇_
 
 ## 版本
 
-v0.1.2
+v0.1.3
 
 ⚠ 适配nonebot2-2.0.0alpha.16；
 
 👉 适配beta.1版本参见[分支](https://github.com/KafCoppelia/nonebot_plugin_antiflash/tree/beta.1)
 
-[更新日志](https://github.com/KafCoppelia/nonebot_plugin_antiflash/releases/tag/v0.1.2)
+[更新日志](https://github.com/KafCoppelia/nonebot_plugin_antiflash/releases/tag/v0.1.3)
 
 ## 安装
 
-1. 通过`pip`或`nb`安装，版本请指定`0.1.2`；
+1. 通过`pip`或`nb`安装，版本请指定`0.1.3`；
 
 2. 在`env`内设置：
 
