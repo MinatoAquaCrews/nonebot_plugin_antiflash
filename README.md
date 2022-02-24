@@ -15,7 +15,7 @@ _🎇 反闪照 🎇_
   </a>
   
   <a href="https://github.com/nonebot/nonebot2">
-    <img src="https://img.shields.io/badge/nonebot2-2.0.0beta.1+-green">
+    <img src="https://img.shields.io/badge/nonebot2-2.0.0beta.2-green">
   </a>
   
   <a href="">
@@ -30,7 +30,7 @@ _🎇 反闪照 🎇_
 
 v0.2.1
 
-⚠ 适配nonebot2-2.0.0beta.1+；
+⚠ 适配nonebot2-2.0.0beta.2；
 
 👉 适配alpha.16版本参见[alpha.16分支](https://github.com/KafCoppelia/nonebot_plugin_antiflash/tree/alpha.16)
 
