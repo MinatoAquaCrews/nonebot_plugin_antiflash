@@ -10,7 +10,7 @@ _🎇 反闪照 🎇_
 </div>
 <p align="center">
   
-  <a href="https://github.com/KafCoppelia/nonebot_plugin_antiflash/blob/main/LICENSE">
+  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_antiflash/blob/beta/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-informational">
   </a>
   
@@ -19,7 +19,7 @@ _🎇 反闪照 🎇_
   </a>
   
   <a href="">
-    <img src="https://img.shields.io/badge/release-v0.2.1-orange">
+    <img src="https://img.shields.io/badge/release-v0.2.2-orange">
   </a>
   
 </p>
@@ -28,34 +28,36 @@ _🎇 反闪照 🎇_
 
 ## 版本
 
-v0.2.1
+v0.2.2
 
 ⚠ 适配nonebot2-2.0.0beta.2；
 
-👉 适配alpha.16版本参见[alpha.16分支](https://github.com/KafCoppelia/nonebot_plugin_antiflash/tree/alpha.16)
+👉 适配alpha.16版本参见[alpha.16分支](https://github.com/MinatoAquaCrews/nonebot_plugin_antiflash/tree/alpha.16)
 
-[更新日志](https://github.com/KafCoppelia/nonebot_plugin_antiflash/releases/tag/v0.2.1)
+[更新日志](https://github.com/MinatoAquaCrews/nonebot_plugin_antiflash/releases/tag/v0.2.2)
 
 ## 安装
 
-1. 通过`pip`或`nb`安装，版本请指定`0.2.1`；
+1. 通过`pip`或`nb`安装；
 
 2. 在`env`内设置：
 
 ```python
-ANTI_FLASH_ON=true                          # 开启或关闭
-ANTI_FLASH_GROUP=["123456789", "987654321"] # 指定群聊
+ANTI_FLASH_ON=true                          # 全局开关
+ANTI_FLASH_GROUP=["123456789", "987654321"] # 默认开启的群聊，但可通过指令开关
 ```
 
-确保打开功能时群聊列表不为空。
+**修改** 全局开启时，群聊列表可以为空。
 
 ## 功能
 
-⚠ **谨慎开启此项功能, 谨慎指定群聊**
+1. 全局开关**仅超管**配置，不支持指令修改全局开关；
 
-由于该功能过于危险，需指定特定群聊启用反闪照功能。
+2. 各群聊均配置开关，需**管理员及超管权限**进行修改；
 
-*TODO* 或许需要加一个群开关？
+## 命令
+
+开启/启用/禁用反闪照
 
 ## 本插件改自
 
