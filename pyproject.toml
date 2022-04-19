@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nonebot-plugin-antiflash"
-version = "0.2.2"
+version = "0.2.3"
 description = "Anti flash pictures in groups"
 authors = ["KafCoppelia <k740677208@gmail.com>"]
 license = "MIT"

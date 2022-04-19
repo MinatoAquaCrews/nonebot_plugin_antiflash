@@ -11,15 +11,15 @@ _🎇 反闪照 🎇_
 <p align="center">
   
   <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_antiflash/blob/beta/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-informational">
+    <img src="https://img.shields.io/github/license/MinatoAquaCrews/nonebot_plugin_antiflash?color=blue">
   </a>
   
   <a href="https://github.com/nonebot/nonebot2">
     <img src="https://img.shields.io/badge/nonebot2-2.0.0beta.2-green">
   </a>
   
-  <a href="">
-    <img src="https://img.shields.io/badge/release-v0.2.2-orange">
+  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_antiflash/releases/tag/v0.2.3">
+    <img src="https://img.shields.io/github/v/release/MinatoAquaCrews/nonebot_plugin_antiflash?color=orange">
   </a>
   
 </p>
@@ -28,13 +28,13 @@ _🎇 反闪照 🎇_
 
 ## 版本
 
-v0.2.2
+v0.2.3
 
-⚠ 适配nonebot2-2.0.0beta.2；
+⚠ 适配nonebot2-2.0.0beta.2
 
 👉 适配alpha.16版本参见[alpha.16分支](https://github.com/MinatoAquaCrews/nonebot_plugin_antiflash/tree/alpha.16)
 
-[更新日志](https://github.com/MinatoAquaCrews/nonebot_plugin_antiflash/releases/tag/v0.2.2)
+[更新日志](https://github.com/MinatoAquaCrews/nonebot_plugin_antiflash/releases/tag/v0.2.3)
 
 ## 安装
 
@@ -42,12 +42,15 @@ v0.2.2
 
 2. 在`env`内设置：
 
-```python
-ANTI_FLASH_ON=true                          # 全局开关
-ANTI_FLASH_GROUP=["123456789", "987654321"] # 默认开启的群聊，但可通过指令开关
-```
+	```python
+	ANTI_FLASH_ON=true                          # 全局开关
+	ANTI_FLASH_GROUP=["123456789", "987654321"] # 默认开启的群聊，但可通过指令开关
+	ANTI_FLASH_PATH="your-path-to-config.json"  # 配置文件路径，默认同插件代码路径
+	```
 
-**修改** 全局开启时，群聊列表可以为空。
+	`ANTI_FLASH_GROUP`会在每次初始化时写入配置文件，在群组启用反闪照，可通过指令更改。
+
+	**修改** 配置文件即读即改，可后台修改。
 
 ## 功能
 
@@ -58,7 +61,3 @@ ANTI_FLASH_GROUP=["123456789", "987654321"] # 默认开启的群聊，但可通�
 ## 命令
 
 开启/启用/禁用反闪照
-
-## 本插件改自
-
-忘记出处了，找到了马上补上。

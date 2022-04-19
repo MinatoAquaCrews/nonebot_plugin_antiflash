@@ -6,7 +6,7 @@ from nonebot.matcher import Matcher
 import re
 from .config import handler
 
-__anti_flash_vsrsion__ = "v0.2.2"
+__anti_flash_vsrsion__ = "v0.2.3"
 __anti_flash_notes__ = f'''
 群聊反闪照 {__anti_flash_vsrsion__}
 开启/启用/禁用反闪照
@@ -16,8 +16,8 @@ async def _checker(event: GroupMessageEvent) -> bool:
     msg = str(event.get_message())
     return True if 'type=flash' in msg and handler.on else False
 
-anti_flash_on = on_command(cmd="开启反闪照", aliases={"启用反闪照"}, permission=SUPERUSER|GROUP_ADMIN|GROUP_OWNER, priority=10, block=True)
-anti_flash_off = on_command(cmd="禁用反闪照", permission=SUPERUSER|GROUP_ADMIN|GROUP_OWNER, priority=10, block=True)
+anti_flash_on = on_command(cmd="开启反闪照", aliases={"启用反闪照"}, permission=SUPERUSER | GROUP_ADMIN| GROUP_OWNER, priority=10, block=True)
+anti_flash_off = on_command(cmd="禁用反闪照", permission=SUPERUSER | GROUP_ADMIN | GROUP_OWNER, priority=10, block=True)
 
 flashimg = on_message(priority=1, rule=Rule(_checker))
 @flashimg.handle()
